@@ -1,0 +1,109 @@
+src/caffe/util/image_io.cpp: In function ‘bool caffe::load_blob_from_binary(std::string, caffe::Blob<Dtype>*) [with Dtype = float; std::string = std::basic_string<char>]’:
+src/caffe/util/image_io.cpp:385:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&n, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:386:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&c, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:387:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&l, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:388:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&h, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:389:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&w, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:400:50: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(buff, sizeof(float), n * c * l * h * w, f);
+                                                  ^
+src/caffe/util/image_io.cpp: In function ‘bool caffe::load_blob_from_binary(std::string, caffe::Blob<Dtype>*) [with Dtype = double; std::string = std::basic_string<char>]’:
+src/caffe/util/image_io.cpp:413:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&n, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:414:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&c, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:415:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&l, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:416:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&h, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:417:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&w, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:428:51: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(buff, sizeof(double), n * c * l * h * w, f);
+                                                   ^
+src/caffe/util/image_io.cpp: In function ‘bool caffe::load_blob_from_uint8_binary(std::string, caffe::Blob<Dtype>*) [with Dtype = float; std::string = std::basic_string<char>]’:
+src/caffe/util/image_io.cpp:441:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&n, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:442:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&c, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:443:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&l, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:444:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&h, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:445:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&w, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:460:51: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(temp_buff, sizeof(unsigned char), count, f);
+                                                   ^
+src/caffe/util/image_io.cpp: In function ‘bool caffe::load_blob_from_uint8_binary(std::string, caffe::Blob<Dtype>*) [with Dtype = double; std::string = std::basic_string<char>]’:
+src/caffe/util/image_io.cpp:478:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&n, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:479:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&c, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:480:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&l, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:481:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&h, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:482:30: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(&w, sizeof(int), 1, f);
+                              ^
+src/caffe/util/image_io.cpp:498:51: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’, declared with attribute warn_unused_result [-Wunused-result]
+  fread(temp_buff, sizeof(unsigned char), count, f);
+                                                   ^
+src/caffe/util/image_io.cpp: In function ‘bool caffe::ReadImageSequenceToVolumeDatum(const char*, int, int, int, int, int, int, caffe::VolumeDatum*, float)’:
+src/caffe/util/image_io.cpp:372:35: warning: ‘data_size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  datum->set_data(buffer, data_size);
+                                   ^
+src/caffe/util/image_io.cpp:371:67: warning: ‘channel_size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  CHECK(offset == channel_size) << "wrong offset size" << std::endl;
+                                                                   ^
+src/caffe/util/image_io.cpp:373:11: warning: ‘buffer’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  delete []buffer;
+           ^
+src/caffe/util/image_io.cpp:369:23: warning: ‘image_size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   offset += image_size;
+                       ^
+src/caffe/util/image_io.cpp: In function ‘bool caffe::ReadVideoToVolumeDatumHelper(const char*, int, int, int, int, int, int, caffe::VolumeDatum*)’:
+src/caffe/util/image_io.cpp:211:35: warning: ‘data_size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  datum->set_data(buffer, data_size);
+                                   ^
+src/caffe/util/image_io.cpp:210:67: warning: ‘channel_size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  CHECK(offset == channel_size) << "wrong offset size" << std::endl;
+                                                                   ^
+src/caffe/util/image_io.cpp:208:23: warning: ‘image_size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   offset += image_size;
+                       ^
+src/caffe/util/image_io.cpp: In function ‘bool caffe::ReadVideoToVolumeDatumHelperSafe(const char*, int, int, int, int, int, int, caffe::VolumeDatum*)’:
+src/caffe/util/image_io.cpp:303:35: warning: ‘data_size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  datum->set_data(buffer, data_size);
+                                   ^
+src/caffe/util/image_io.cpp:302:67: warning: ‘channel_size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  CHECK(offset == channel_size) << "wrong offset size" << std::endl;
+                                                                   ^
+src/caffe/util/image_io.cpp:300:23: warning: ‘image_size’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   offset += image_size;
+                       ^

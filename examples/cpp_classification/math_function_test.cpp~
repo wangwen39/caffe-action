@@ -1,0 +1,45 @@
+#include <caffe/caffe.hpp>
+#ifdef USE_OPENCV
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#endif  // USE_OPENCV
+#include <algorithm>
+#include <iosfwd>
+#include <memory>
+#include <string>
+#include <utility>
+#include <vector>
+#include "caffe/util/math_functions.hpp"
+
+#ifdef USE_OPENCV
+using namespace caffe;  // NOLINT(build/namespaces)
+using std::string;
+
+int main() {
+  // void caffe_cpu_gemm()
+  vector<int> bottom_shape(2);
+  bottom_shape.push_back(10);
+  bottom_shape.push_back(5);
+  Blob<float>* bottom = new Blob(bottom_shape);
+  float* bottom_data = bottom->mutable_cpu_data();
+
+  cout<<"size for bottom"<<bottom->string_shape()<<endl;
+  for (int i=0; i<bottom_shape[0]; ++i) {
+    for (int j=0; j<bottom_shape[1]; ++j) {
+      int index = i*bottom_shape[1]+j;
+      bottom_data[index] = index;
+    }
+  }
+  
+  for (int i=0; i<bottom_shape[0]; ++i) {
+    for (int j=0; j<bottom_shape[1]; ++j) {
+      int index = i*bottom_shape[1]+j;
+      cout<<bottom_data[i][j]<<" ";
+    }
+  }
+  //caffe_cpu_gemm<float>(CblasNoTrans, CblasNoTrans,
+  //    M_, N_, K_, (Dtype)1.,
+  //    bottom_data, weight, (Dtype)0., top_data);
+  return 0;
+}
